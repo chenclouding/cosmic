@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FlowViewLayout Version="1.2">
+  <StrutsActivity path="/editProduct.do" location="2789,0" dimension="246,104" />
+  <StrutsActivity path="/addFunctionUser.do" location="3135,0" dimension="278,104" />
+  <StrutsActivity path="/editFunctionUser.do" location="3513,0" dimension="276,104" />
+  <StrutsActivity path="/addLayer.do" location="2107,0" dimension="234,104" />
+  <StrutsActivity path="/editLayer.do" location="1775,0" dimension="232,104" />
+  <StrutsActivity path="/addPeerComponent.do" location="0,0" dimension="297,104" />
+  <StrutsActivity path="/editPeerComponent.do" location="931,0" dimension="295,104" />
+  <StrutsActivity path="/addFunctionProcess.do" location="4283,0" dimension="296,104" />
+  <StrutsActivity path="/editFunctionProcess.do" location="3889,0" dimension="294,104" />
+  <StrutsActivity path="/addEvent.do" location="5157,0" dimension="234,104" />
+  <StrutsActivity path="/addFunctionProcessInterestObject.do" location="4679,0" dimension="378,104" />
+  <StrutsActivity path="/addDataGroup.do" location="6212,0" dimension="267,104" />
+  <StrutsActivity path="/addInterestObject.do" location="5827,0" dimension="285,104" />
+  <StrutsActivity path="/addDataAttribute.do" location="7322,0" dimension="280,104" />
+  <StrutsActivity path="/editDataGroup.do" location="6579,0" dimension="265,104" />
+  <StrutsActivity path="/editDataAttribute.do" location="6944,0" dimension="278,104" />
+  <StrutsActivity path="/addDataMovement.do" location="8092,0" dimension="292,104" />
+  <StrutsActivity path="/editDataMovement.do" location="7702,0" dimension="290,104" />
+  <StrutsActivity path="/editEvent.do" location="5491,0" dimension="232,104" />
+  <StrutsActivity path="/addFunctionProcessEvent.do" location="8484,0" dimension="327,104" />
+  <StrutsActivity path="/addFunctionProcessUser.do" location="10190,0" dimension="323,104" />
+  <StrutsActivity path="/addProduct.do" location="2441,0" dimension="248,104" />
+  <StrutsActivity path="/addDataMoveOfFuncPros.do" location="8959,0" dimension="329,104" />
+  <StrutsActivity path="/editSubPeerComponent.do" location="1358,0" dimension="317,104" />
+  <StrutsActivity path="/addMeasurePurpose.do" location="9788,0" dimension="302,104" />
+  <StrutsActivity path="/editMeasurePurpose.do" location="9388,0" dimension="300,104" />
+  <StrutsActivity path="/addMeasureScope.do" location="10613,0" dimension="290,104" />
+  <StrutsActivity path="/editMeasureScope.do" location="11407,0" dimension="288,104" />
+  <StrutsActivity path="/FSM/cosmicStandard/projectMeasure.jsp" location="2058,704" dimension="277,53" />
+  <StrutsActivity path="/FSM/cosmicStandard/failure.jsp" location="5559,704" dimension="221,53" />
+  <StrutsActivity path="/FSM/cosmicStandard/strategy/functionUser.jsp" location="2758,704" dimension="310,53" />
+  <StrutsActivity path="/FSM/cosmicStandard/strategy/layer.jsp" location="1387,704" dimension="265,53" />
+  <StrutsActivity path="/FSM/cosmicStandard/strategy/addSubPeerComponent.jsp" location="653,704" dimension="376,53" />
+  <StrutsActivity path="/FSM/cosmicStandard/strategy/peerComponent.jsp" location="148,704" dimension="332,53" />
+  <StrutsActivity path="/FSM/cosmicStandard/mapping/functionProcess.jsp" location="3513,704" dimension="333,53" />
+  <StrutsActivity path="/FSM/cosmicStandard/mapping/event.jsp" location="4744,704" dimension="273,53" />
+  <StrutsActivity path="/FSM/cosmicStandard/mapping/functionProcessInterestObject.jsp" location="4064,704" dimension="415,53" />
+  <StrutsActivity path="/FSM/cosmicStandard/mapping/addDataGroup.jsp" location="6813,704" dimension="329,53" />
+  <StrutsActivity path="/FSM/cosmicStandard/mapping/interestObject.jsp" location="6284,704" dimension="323,53" />
+  <StrutsActivity path="/FSM/cosmicStandard/mapping/dataAttribute.jsp" location="7565,704" dimension="318,53" />
+  <StrutsActivity path="/FSM/cosmicStandard/measure/dataMovement.jsp" location="8333,704" dimension="328,53" />
+  <StrutsActivity path="/FSM/cosmicStandard/mapping/functionProcessEvent.jsp" location="8952,704" dimension="364,53" />
+  <StrutsActivity path="/FSM/cosmicStandard/mapping/functionProcessUser.jsp" location="10656,704" dimension="360,53" />
+  <StrutsActivity path="/FSM/cosmicStandard/measure/editDataMoveOfFuncPros.jsp" location="9416,704" dimension="388,53" />
+  <StrutsActivity path="/FSM/cosmicStandard/strategy/measurePurpose.jsp" location="10028,704" dimension="335,53" />
+  <StrutsActivity path="/FSM/cosmicStandard/strategy/measureScope.jsp" location="11245,704" dimension="323,53" />
+  <StrutsTransition id="/editMeasureScope.do,success,/FSM/cosmicStandard/strategy/measureScope.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="11623,104" />
+      <AbsolutePoint location="11623,134" />
+      <AbsolutePoint location="11487,134" />
+      <AbsolutePoint location="11487,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/editProduct.do,failure,/FSM/cosmicStandard/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2974,104" />
+      <AbsolutePoint location="2974,314" />
+      <AbsolutePoint location="5610,314" />
+      <AbsolutePoint location="5610,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/editProduct.do,success,/FSM/cosmicStandard/projectMeasure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2851,104" />
+      <AbsolutePoint location="2851,614" />
+      <AbsolutePoint location="2266,614" />
+      <AbsolutePoint location="2266,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addFunctionUser.do,failure,/FSM/cosmicStandard/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3344,104" />
+      <AbsolutePoint location="3344,284" />
+      <AbsolutePoint location="5618,284" />
+      <AbsolutePoint location="5618,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addFunctionProcessUser.do,success,/FSM/cosmicStandard/mapping/functionProcessUser.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="10432,104" />
+      <AbsolutePoint location="10432,164" />
+      <AbsolutePoint location="10836,164" />
+      <AbsolutePoint location="10836,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addProduct.do,success,/FSM/cosmicStandard/projectMeasure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2503,104" />
+      <AbsolutePoint location="2503,584" />
+      <AbsolutePoint location="2128,584" />
+      <AbsolutePoint location="2128,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addPeerComponent.do,peerComponent,/FSM/cosmicStandard/strategy/peerComponent.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="49,104" />
+      <AbsolutePoint location="49,554" />
+      <AbsolutePoint location="231,554" />
+      <AbsolutePoint location="231,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/editDataAttribute.do,success,/FSM/cosmicStandard/mapping/dataAttribute.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="7153,104" />
+      <AbsolutePoint location="7153,164" />
+      <AbsolutePoint location="7645,164" />
+      <AbsolutePoint location="7645,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/editLayer.do,success,/FSM/cosmicStandard/strategy/layer.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1833,104" />
+      <AbsolutePoint location="1833,524" />
+      <AbsolutePoint location="1453,524" />
+      <AbsolutePoint location="1453,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addFunctionProcess.do,success,/FSM/cosmicStandard/mapping/functionProcess.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4357,104" />
+      <AbsolutePoint location="4357,554" />
+      <AbsolutePoint location="3763,554" />
+      <AbsolutePoint location="3763,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addMeasureScope.do,failure,/FSM/cosmicStandard/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="10685,104" />
+      <AbsolutePoint location="10685,554" />
+      <AbsolutePoint location="5768,554" />
+      <AbsolutePoint location="5768,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/editDataGroup.do,failure,/FSM/cosmicStandard/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="6646,104" />
+      <AbsolutePoint location="6646,254" />
+      <AbsolutePoint location="5689,254" />
+      <AbsolutePoint location="5689,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/editPeerComponent.do,failure,/FSM/cosmicStandard/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1152,104" />
+      <AbsolutePoint location="1152,464" />
+      <AbsolutePoint location="5570,464" />
+      <AbsolutePoint location="5570,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addDataMovement.do,success,/FSM/cosmicStandard/measure/dataMovement.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="8311,104" />
+      <AbsolutePoint location="8311,134" />
+      <AbsolutePoint location="8579,134" />
+      <AbsolutePoint location="8579,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addLayer.do,failure,/FSM/cosmicStandard/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2283,104" />
+      <AbsolutePoint location="2283,374" />
+      <AbsolutePoint location="5594,374" />
+      <AbsolutePoint location="5594,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addMeasurePurpose.do,success,/FSM/cosmicStandard/strategy/measurePurpose.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="10014,104" />
+      <AbsolutePoint location="10014,134" />
+      <AbsolutePoint location="10279,134" />
+      <AbsolutePoint location="10279,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addDataAttribute.do,failure,/FSM/cosmicStandard/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="7392,104" />
+      <AbsolutePoint location="7392,314" />
+      <AbsolutePoint location="5705,314" />
+      <AbsolutePoint location="5705,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addFunctionProcessInterestObject.do,success,/FSM/cosmicStandard/mapping/functionProcessInterestObject.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4774,104" />
+      <AbsolutePoint location="4774,584" />
+      <AbsolutePoint location="4272,584" />
+      <AbsolutePoint location="4272,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addEvent.do,success,/FSM/cosmicStandard/mapping/event.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5216,104" />
+      <AbsolutePoint location="5216,524" />
+      <AbsolutePoint location="4812,524" />
+      <AbsolutePoint location="4812,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/editPeerComponent.do,success,/FSM/cosmicStandard/strategy/peerComponent.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1005,104" />
+      <AbsolutePoint location="1005,554" />
+      <AbsolutePoint location="397,554" />
+      <AbsolutePoint location="397,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addFunctionUser.do,success,/FSM/cosmicStandard/strategy/functionUser.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3205,104" />
+      <AbsolutePoint location="3205,644" />
+      <AbsolutePoint location="2836,644" />
+      <AbsolutePoint location="2836,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/editDataAttribute.do,failure,/FSM/cosmicStandard/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="7014,104" />
+      <AbsolutePoint location="7014,284" />
+      <AbsolutePoint location="5697,284" />
+      <AbsolutePoint location="5697,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/editSubPeerComponent.do,failure,/FSM/cosmicStandard/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1596,104" />
+      <AbsolutePoint location="1596,434" />
+      <AbsolutePoint location="5578,434" />
+      <AbsolutePoint location="5578,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addDataGroup.do,failure,/FSM/cosmicStandard/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="6279,104" />
+      <AbsolutePoint location="6279,224" />
+      <AbsolutePoint location="5681,224" />
+      <AbsolutePoint location="5681,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/editEvent.do,success,/FSM/cosmicStandard/mapping/event.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5549,104" />
+      <AbsolutePoint location="5549,554" />
+      <AbsolutePoint location="4949,554" />
+      <AbsolutePoint location="4949,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addFunctionProcessInterestObject.do,failure,/FSM/cosmicStandard/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4963,104" />
+      <AbsolutePoint location="4963,164" />
+      <AbsolutePoint location="5649,164" />
+      <AbsolutePoint location="5649,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/editFunctionUser.do,success,/FSM/cosmicStandard/strategy/functionUser.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3582,104" />
+      <AbsolutePoint location="3582,674" />
+      <AbsolutePoint location="2991,674" />
+      <AbsolutePoint location="2991,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addInterestObject.do,failure,/FSM/cosmicStandard/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5899,104" />
+      <AbsolutePoint location="5899,134" />
+      <AbsolutePoint location="5673,134" />
+      <AbsolutePoint location="5673,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/editEvent.do,failure,/FSM/cosmicStandard/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5665,104" />
+      <AbsolutePoint location="5665,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addEvent.do,failure,/FSM/cosmicStandard/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="5333,104" />
+      <AbsolutePoint location="5333,134" />
+      <AbsolutePoint location="5657,134" />
+      <AbsolutePoint location="5657,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/editDataMovement.do,success,/FSM/cosmicStandard/measure/dataMovement.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="7920,104" />
+      <AbsolutePoint location="7920,164" />
+      <AbsolutePoint location="8415,164" />
+      <AbsolutePoint location="8415,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/editDataMovement.do,failure,/FSM/cosmicStandard/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="7775,104" />
+      <AbsolutePoint location="7775,344" />
+      <AbsolutePoint location="5712,344" />
+      <AbsolutePoint location="5712,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addDataMoveOfFuncPros.do,success,/FSM/cosmicStandard/measure/editDataMoveOfFuncPros.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="9206,104" />
+      <AbsolutePoint location="9206,194" />
+      <AbsolutePoint location="9610,194" />
+      <AbsolutePoint location="9610,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addDataGroup.do,success,/FSM/cosmicStandard/mapping/addDataGroup.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="6413,104" />
+      <AbsolutePoint location="6413,164" />
+      <AbsolutePoint location="6895,164" />
+      <AbsolutePoint location="6895,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/editMeasurePurpose.do,success,/FSM/cosmicStandard/strategy/measurePurpose.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="9613,104" />
+      <AbsolutePoint location="9613,164" />
+      <AbsolutePoint location="10112,164" />
+      <AbsolutePoint location="10112,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addInterestObject.do,success,/FSM/cosmicStandard/mapping/interestObject.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="6041,104" />
+      <AbsolutePoint location="6041,194" />
+      <AbsolutePoint location="6445,194" />
+      <AbsolutePoint location="6445,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addDataMoveOfFuncPros.do,failure,/FSM/cosmicStandard/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="9041,104" />
+      <AbsolutePoint location="9041,434" />
+      <AbsolutePoint location="5736,434" />
+      <AbsolutePoint location="5736,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/editMeasureScope.do,failure,/FSM/cosmicStandard/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="11479,104" />
+      <AbsolutePoint location="11479,584" />
+      <AbsolutePoint location="5776,584" />
+      <AbsolutePoint location="5776,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addDataAttribute.do,success,/FSM/cosmicStandard/mapping/dataAttribute.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="7532,104" />
+      <AbsolutePoint location="7532,134" />
+      <AbsolutePoint location="7804,134" />
+      <AbsolutePoint location="7804,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/editLayer.do,failure,/FSM/cosmicStandard/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1949,104" />
+      <AbsolutePoint location="1949,404" />
+      <AbsolutePoint location="5586,404" />
+      <AbsolutePoint location="5586,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/editFunctionProcess.do,success,/FSM/cosmicStandard/mapping/functionProcess.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3963,104" />
+      <AbsolutePoint location="3963,524" />
+      <AbsolutePoint location="3597,524" />
+      <AbsolutePoint location="3597,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addFunctionProcessEvent.do,failure,/FSM/cosmicStandard/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="8566,104" />
+      <AbsolutePoint location="8566,404" />
+      <AbsolutePoint location="5728,404" />
+      <AbsolutePoint location="5728,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/editMeasurePurpose.do,failure,/FSM/cosmicStandard/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="9463,104" />
+      <AbsolutePoint location="9463,464" />
+      <AbsolutePoint location="5744,464" />
+      <AbsolutePoint location="5744,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addProduct.do,failure,/FSM/cosmicStandard/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2627,104" />
+      <AbsolutePoint location="2627,344" />
+      <AbsolutePoint location="5602,344" />
+      <AbsolutePoint location="5602,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addFunctionProcessUser.do,failure,/FSM/cosmicStandard/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="10271,104" />
+      <AbsolutePoint location="10271,524" />
+      <AbsolutePoint location="5760,524" />
+      <AbsolutePoint location="5760,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addFunctionProcessEvent.do,success,/FSM/cosmicStandard/mapping/functionProcessEvent.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="8730,104" />
+      <AbsolutePoint location="8730,134" />
+      <AbsolutePoint location="9134,134" />
+      <AbsolutePoint location="9134,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addDataMovement.do,failure,/FSM/cosmicStandard/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="8165,104" />
+      <AbsolutePoint location="8165,374" />
+      <AbsolutePoint location="5720,374" />
+      <AbsolutePoint location="5720,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addPeerComponent.do,subPeerComponent,/FSM/cosmicStandard/strategy/addSubPeerComponent.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="148,104" />
+      <AbsolutePoint location="148,524" />
+      <AbsolutePoint location="747,524" />
+      <AbsolutePoint location="747,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/editDataGroup.do,success,/FSM/cosmicStandard/mapping/addDataGroup.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="6778,104" />
+      <AbsolutePoint location="6778,134" />
+      <AbsolutePoint location="7059,134" />
+      <AbsolutePoint location="7059,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addMeasurePurpose.do,failure,/FSM/cosmicStandard/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="9863,104" />
+      <AbsolutePoint location="9863,494" />
+      <AbsolutePoint location="5752,494" />
+      <AbsolutePoint location="5752,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addMeasureScope.do,success,/FSM/cosmicStandard/strategy/measureScope.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="10830,104" />
+      <AbsolutePoint location="10830,134" />
+      <AbsolutePoint location="11326,134" />
+      <AbsolutePoint location="11326,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/editFunctionProcess.do,failure,/FSM/cosmicStandard/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4110,104" />
+      <AbsolutePoint location="4110,224" />
+      <AbsolutePoint location="5633,224" />
+      <AbsolutePoint location="5633,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/editFunctionUser.do,failure,/FSM/cosmicStandard/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="3720,104" />
+      <AbsolutePoint location="3720,254" />
+      <AbsolutePoint location="5626,254" />
+      <AbsolutePoint location="5626,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/editSubPeerComponent.do,success,/FSM/cosmicStandard/strategy/addSubPeerComponent.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="1437,104" />
+      <AbsolutePoint location="1437,584" />
+      <AbsolutePoint location="935,584" />
+      <AbsolutePoint location="935,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addLayer.do,success,/FSM/cosmicStandard/strategy/layer.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="2166,104" />
+      <AbsolutePoint location="2166,554" />
+      <AbsolutePoint location="1586,554" />
+      <AbsolutePoint location="1586,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addPeerComponent.do,failure,/FSM/cosmicStandard/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="247,104" />
+      <AbsolutePoint location="247,494" />
+      <AbsolutePoint location="5562,494" />
+      <AbsolutePoint location="5562,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+  <StrutsTransition id="/addFunctionProcess.do,failure,/FSM/cosmicStandard/failure.jsp,1" routingType="0">
+    <AutomaticBendpoints>
+      <AbsolutePoint location="4505,104" />
+      <AbsolutePoint location="4505,194" />
+      <AbsolutePoint location="5641,194" />
+      <AbsolutePoint location="5641,704" />
+    </AutomaticBendpoints>
+  </StrutsTransition>
+</FlowViewLayout>
+

@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+<struts-config>
+   <data-sources />
+   <form-beans>   
+    <form-bean name="layerForm" type="struts.FSM.form.LayerForm" />
+    <form-bean name="peerComponentForm" type="struts.FSM.form.PeerComponentForm" />
+    <form-bean name="functionProcessForm" type="struts.FSM.form.FunctionProcessForm" />   
+    <form-bean name="eventForm" type="struts.FSM.form.EventForm" />
+    <form-bean name="functionProcessInterestObjectForm" type="struts.FSM.form.FunctionProcessInterestObjectForm" />
+    <form-bean name="dataGroupForm" type="struts.FSM.form.DataGroupForm" />
+    <form-bean name="interestObjectForm" type="struts.FSM.form.InterestObjectForm" />
+    <form-bean name="dataAttributeForm" type="struts.FSM.form.DataAttributeForm" />   
+    <form-bean name="dataMovementForm" type="struts.FSM.form.DataMovementForm" />
+    <form-bean name="userForm" type="struts.FSM.form.UserForm" />
+    <form-bean name="functionProcessEventForm" type="struts.FSM.form.FunctionProcessEventForm" />
+    <form-bean name="functionProcessUserForm" type="struts.FSM.form.FunctionProcessUserForm" />
+    <form-bean name="productForm" type="struts.FSM.form.ProductForm" />
+    <form-bean name="measurePurposeForm" type="struts.FSM.form.MeasurePurposeForm" />
+    <form-bean name="measureScopeForm" type="struts.FSM.form.MeasureScopeForm" />
+     <form-bean name="registerForm" type="struts.FSM.form.RegisterForm" />
+     <form-bean name="loginForm" type="struts.FSM.form.LoginForm" />
+    
+    </form-beans>
+
+   <global-exceptions />
+ <global-forwards >
+  
+ 
+   </global-forwards>
+   <action-mappings>
+    
+    
+    <action
+      attribute="productForm"
+      name="productForm"
+      path="/editProduct"
+      scope="request"
+      type="struts.FSM.action.EditProductAction">
+      <forward
+        name="success"
+        path="/FSM/cosmicStandard/projectMeasure.jsp"
+        contextRelative="true" />
+      <forward
+        name="failure"
+        path="/FSM/cosmicStandard/failure.jsp"
+        contextRelative="true" />
+    </action>
+    
+    <action
+      attribute="userForm"
+      name="userForm"
+      path="/addFunctionUser"
+      scope="request"
+      type="struts.FSM.action.AddFunctionUserAction">
+      <forward
+        name="success"
+        path="/FSM/cosmicStandard/strategy/functionUser.jsp"
+        contextRelative="true" />
+      <forward
+        name="failure"
+        path="/FSM/cosmicStandard/failure.jsp"
+        contextRelative="true" />
+    </action>
+    
+    <action
+      attribute="userForm"
+      name="userForm"
+      path="/editFunctionUser"
+      scope="request"
+      type="struts.FSM.action.EditFunctionUserAction">
+      <forward
+        name="success"
+        path="/FSM/cosmicStandard/strategy/functionUser.jsp"
+        contextRelative="true" />
+      <forward
+        name="failure"
+        path="/FSM/cosmicStandard/failure.jsp"
+        contextRelative="true" />
+    </action>
+    
+    <action
+      attribute="layerForm"
+      name="layerForm"
+      path="/addLayer"
+      scope="request"
+      type="struts.FSM.action.AddLayerAction">
+      <forward
+        name="success"
+        path="/FSM/cosmicStandard/strategy/layer.jsp"
+        contextRelative="true" />
+      <forward
+        name="failure"
+        path="/FSM/cosmicStandard/failure.jsp"
+        contextRelative="true" />
+    </action>
+    
+    <action
+      attribute="layerForm"
+      name="layerForm"
+      path="/editLayer"
+      scope="request"
+      type="struts.FSM.action.EditLayerAction">
+      <forward
+        name="success"
+        path="/FSM/cosmicStandard/strategy/layer.jsp"
+        contextRelative="true" />
+      <forward
+        name="failure"
+        path="/FSM/cosmicStandard/failure.jsp"
+        contextRelative="true" />
+    </action>
+    <action
+      attribute="peerComponentForm"
+      name="peerComponentForm"
+      path="/addPeerComponent"
+      scope="request"
+      type="struts.FSM.action.AddPeerComponentAction">
+      <forward
+        name="subPeerComponent"
+        path="/FSM/cosmicStandard/strategy/addSubPeerComponent.jsp"
+        contextRelative="true" />
+      <forward
+        name="peerComponent"
+        path="/FSM/cosmicStandard/strategy/peerComponent.jsp"
+        contextRelative="true" />
+      <forward
+        name="failure"
+        path="/FSM/cosmicStandard/failure.jsp"
+        contextRelative="true" />
+    </action>
+    <action
+      attribute="peerComponentForm"
+      name="peerComponentForm"
+      path="/editPeerComponent"
+      scope="request"
+      type="struts.FSM.action.EditPeerComponentAction">
+      <forward
+        name="success"
+        path="/FSM/cosmicStandard/strategy/peerComponent.jsp"
+        contextRelative="true" />
+      <forward
+        name="failure"
+        path="/FSM/cosmicStandard/failure.jsp"
+        contextRelative="true" />
+    </action>
+    <action
+      attribute="functionProcessForm"
+      name="functionProcessForm"
+      path="/addFunctionProcess"
+      scope="request"
+      type="struts.FSM.action.AddFunctionProcessAction">
+      <forward
+        name="success"
+        path="/FSM/cosmicStandard/mapping/functionProcess.jsp"
+        contextRelative="true" />
+      <forward
+        name="failure"
+        path="/FSM/cosmicStandard/failure.jsp"
+        contextRelative="true" />
+    </action>
+    
+    <action
+      attribute="functionProcessForm"
+      name="functionProcessForm"
+      path="/editFunctionProcess"
+      scope="request"
+      type="struts.FSM.action.EditFunctionProcessAction">
+      <forward
+        name="success"
+        path="/FSM/cosmicStandard/mapping/functionProcess.jsp"
+        contextRelative="true" />
+      <forward
+        name="failure"
+        path="/FSM/cosmicStandard/failure.jsp"
+        contextRelative="true" />
+    </action>
+    
+    
+    <action
+      attribute="eventForm"
+      name="eventForm"
+      path="/addEvent"
+      scope="request"
+      type="struts.FSM.action.AddEventAction">
+      <forward
+        name="success"
+        path="/FSM/cosmicStandard/mapping/event.jsp"
+        contextRelative="true" />
+      <forward
+        name="failure"
+        path="/FSM/cosmicStandard/failure.jsp"
+        contextRelative="true" />
+    </action>
+    <action
+      attribute="functionProcessInterestObjectForm"
+      name="functionProcessInterestObjectForm"
+      path="/addFunctionProcessInterestObject"
+      scope="request"
+      type="struts.FSM.action.AddFunctionProcessInterestObjectAction">
+      <forward
+        name="success"
+        path="/FSM/cosmicStandard/mapping/functionProcessInterestObject.jsp"
+        contextRelative="true" />
+      <forward
+        name="failure"
+        path="/FSM/cosmicStandard/failure.jsp"
+        contextRelative="true" />
+    </action>
+    <action
+      attribute="dataGroupForm"
+      name="dataGroupForm"
+      path="/addDataGroup"
+      scope="request"
+      type="struts.FSM.action.AddDataGroupAction">
+      <forward
+        name="success"
+        path="/FSM/cosmicStandard/mapping/addDataGroup.jsp"
+        contextRelative="true" />
+      <forward
+        name="failure"
+        path="/FSM/cosmicStandard/failure.jsp"
+        contextRelative="true" />
+    </action>
+    <action
+      attribute="interestObjectForm"
+      name="interestObjectForm"
+      path="/addInterestObject"
+      scope="request"
+      type="struts.FSM.action.AddInterestObjectAction">
+      <forward
+        name="success"
+        path="/FSM/cosmicStandard/mapping/interestObject.jsp"
+        contextRelative="true" />
+      <forward
+        name="failure"
+        path="/FSM/cosmicStandard/failure.jsp"
+        contextRelative="true" />
+    </action>
+    <action
+      attribute="dataAttributeForm"
+      name="dataAttributeForm"
+      path="/addDataAttribute"
+      scope="request"
+      type="struts.FSM.action.AddDataAttributeAction">
+      <forward
+        name="success"
+        path="/FSM/cosmicStandard/mapping/dataAttribute.jsp"
+        contextRelative="true" />
+      <forward
+        name="failure"
+        path="/FSM/cosmicStandard/failure.jsp"
+        contextRelative="true" />
+    </action>
+    <action
+      attribute="dataGroupForm"
+      name="dataGroupForm"
+      path="/editDataGroup"
+      scope="request"
+      type="struts.FSM.action.EditDataGroupAction">
+      <forward
+        name="success"
+        path="/FSM/cosmicStandard/mapping/addDataGroup.jsp"
+        contextRelative="true" />
+      <forward
+        name="failure"
+        path="/FSM/cosmicStandard/failure.jsp"
+        contextRelative="true" />
+    </action>
+    <action
+      attribute="dataAttributeForm"
+      name="dataAttributeForm"
+      path="/editDataAttribute"
+      scope="request"
+      type="struts.FSM.action.EditDataAttributeAction">
+      <forward
+        name="success"
+        path="/FSM/cosmicStandard/mapping/dataAttribute.jsp"
+        contextRelative="true" />
+      <forward
+        name="failure"
+        path="/FSM/cosmicStandard/failure.jsp"
+        contextRelative="true" />
+    </action>
+        <action
+      attribute="dataMovementForm"
+      name="dataMovementForm"
+      path="/addDataMovement"
+      scope="request"
+      type="struts.FSM.action.AddDataMovementAction">
+      <forward
+        name="success"
+        path="/FSM/cosmicStandard/measure/dataMovement.jsp"
+        contextRelative="true" />
+      <forward
+        name="failure"
+        path="/FSM/cosmicStandard/failure.jsp"
+        contextRelative="true" />
+     </action>
+    <action
+      attribute="dataMovementForm"
+      name="dataMovementForm"
+      path="/editDataMovement"
+      scope="request"
+      type="struts.FSM.action.EditDataMovementAction">
+      <forward
+        name="success"
+        path="/FSM/cosmicStandard/measure/dataMovement.jsp"
+        contextRelative="true" />
+      <forward
+        name="failure"
+        path="/FSM/cosmicStandard/failure.jsp"
+        contextRelative="true" />
+        
+    </action>
+    
+    <action
+      attribute="eventForm"
+      name="eventForm"
+      path="/editEvent"
+      scope="request"
+      type="struts.FSM.action.EditEventAction">
+      <forward
+        name="success"
+        path="/FSM/cosmicStandard/mapping/event.jsp"
+        contextRelative="true" />
+      <forward
+        name="failure"
+        path="/FSM/cosmicStandard/failure.jsp"
+        contextRelative="true" />
+    </action>
+
+
+    
+     <action
+      attribute="functionProcessEventForm"
+      name="functionProcessEventForm"
+      path="/addFunctionProcessEvent"
+      scope="request"
+      type="struts.FSM.action.AddFunctionProcessEventAction">
+      <forward
+        name="success"
+        path="/FSM/cosmicStandard/mapping/functionProcessEvent.jsp"
+        contextRelative="true" />
+      <forward
+        name="failure"
+        path="/FSM/cosmicStandard/failure.jsp"
+        contextRelative="true" />
+    </action>
+    
+    <action
+      attribute="functionProcessUserForm"
+      name="functionProcessUserForm"
+      path="/addFunctionProcessUser"
+      scope="request"
+      type="struts.FSM.action.AddFunctionProcessUserAction">
+      <forward
+        name="success"
+        path="/FSM/cosmicStandard/mapping/functionProcessUser.jsp"
+        contextRelative="true" />
+      <forward
+        name="failure"
+        path="/FSM/cosmicStandard/failure.jsp"
+        contextRelative="true" />
+    </action>
+    <action
+      attribute="productForm"
+      name="productForm"
+      path="/addProduct"
+      scope="request"
+      type="struts.FSM.action.AddProductAction">
+      <forward
+        name="success"
+        path="/FSM/cosmicStandard/projectMeasure.jsp"
+        contextRelative="true" />
+      <forward
+        name="failure"
+        path="/FSM/cosmicStandard/failure.jsp"
+        contextRelative="true" />
+    </action>
+    <action
+      attribute="dataMovementForm"
+      name="dataMovementForm"
+      path="/addDataMoveOfFuncPros"
+      scope="request"
+      type="struts.FSM.action.AddDataMoveOfFuncProsAction">
+      <forward
+        name="success"
+        path="/FSM/cosmicStandard/measure/editDataMoveOfFuncPros.jsp"
+        contextRelative="true" />
+      <forward
+        name="failure"
+        path="/FSM/cosmicStandard/failure.jsp"
+        contextRelative="true" />
+    </action>
+    <action
+      attribute="peerComponentForm"
+      name="peerComponentForm"
+      path="/editSubPeerComponent"
+      scope="request"
+      type="struts.FSM.action.EditSubPeerComponentAction">
+      <forward
+        name="success"
+        path="/FSM/cosmicStandard/strategy/addSubPeerComponent.jsp"
+        contextRelative="true" />
+      <forward
+        name="failure"
+        path="/FSM/cosmicStandard/failure.jsp"
+        contextRelative="true" />
+    </action>
+    <action
+      attribute="measurePurposeForm"
+      name="measurePurposeForm"
+      path="/addMeasurePurpose"
+      scope="request"
+      type="struts.FSM.action.AddMeasurePurposeAction">
+      <forward
+        name="success"
+        path="/FSM/cosmicStandard/strategy/measurePurpose.jsp"
+        contextRelative="true" />
+      <forward
+        name="failure"
+        path="/FSM/cosmicStandard/failure.jsp"
+        contextRelative="true" />
+    </action>
+    <action
+      attribute="measurePurposeForm"
+      name="measurePurposeForm"
+      path="/editMeasurePurpose"
+      scope="request"
+      type="struts.FSM.action.EditMeasurePurposeAction">
+      <forward
+        name="success"
+        path="/FSM/cosmicStandard/strategy/measurePurpose.jsp"
+        contextRelative="true" />
+      <forward
+        name="failure"
+        path="/FSM/cosmicStandard/failure.jsp"
+        contextRelative="true" />
+    </action>
+    <action
+      attribute="measureScopeForm"
+      name="measureScopeForm"
+      path="/addMeasureScope"
+      scope="request"
+      type="struts.FSM.action.AddMeasureScopeAction">
+      <forward
+        name="success"
+        path="/FSM/cosmicStandard/strategy/measureScope.jsp"
+        contextRelative="true" />
+      <forward
+        name="failure"
+        path="/FSM/cosmicStandard/failure.jsp"
+        contextRelative="true" />
+    </action>
+    <action
+      attribute="measureScopeForm"
+      name="measureScopeForm"
+      path="/editMeasureScope"
+      scope="request"
+      type="struts.FSM.action.EditMeasureScopeAction">
+      <forward
+        name="success"
+        path="/FSM/cosmicStandard/strategy/measureScope.jsp"
+        contextRelative="true" />
+      <forward
+        name="failure"
+        path="/FSM/cosmicStandard/failure.jsp"
+        contextRelative="true" />
+    </action>
+    <action
+      attribute="interestObjectForm"
+      name="interestObjectForm"
+      path="/editInterestObject"
+      scope="request"
+      type="struts.FSM.action.EditInterestObjectAction">
+      <forward
+        name="success"
+        path="/FSM/cosmicStandard/mapping/interestObject.jsp"
+        contextRelative="true" />
+      <forward
+        name="failure"
+        path="/FSM/cosmicStandard/failure.jsp"
+        contextRelative="true" />
+    </action>
+   
+    <action
+      attribute="loginForm"
+      name="loginForm"
+      path="/login"
+      scope="request"
+      type="struts.FSM.action.LoginAction">
+      <forward
+        name="success"
+        path="/FSM/fsm.jsp"
+        contextRelative="true" />
+      <forward
+        name="failure"
+        path="/FSM/cosmicStandard/failure.jsp"
+        contextRelative="true" />
+    </action>
+    <action
+      attribute="registerForm"
+      name="registerForm"
+      path="/addRegister"
+      scope="request"
+      type="struts.FSM.action.AddRegisterAction">
+      <forward
+        name="success"
+        path="/index.jsp"
+        contextRelative="true" />
+      <forward
+        name="failure"
+        path="/FSM/cosmicStandard/failure.jsp"
+        contextRelative="true" />
+    </action>
+
+   
+      
+   
+   </action-mappings>
+   <controller />
+</struts-config>
+

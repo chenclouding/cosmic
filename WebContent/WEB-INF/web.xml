@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <servlet>
+    <servlet-name>action</servlet-name>
+    <servlet-class>org.apache.struts.action.ActionServlet</servlet-class>
+    <init-param>
+      <param-name>config</param-name>
+      <param-value>/WEB-INF/struts-config.xml</param-value>
+    </init-param>
+    <init-param>
+      <param-name>config/FSM</param-name>
+      <param-value>/WEB-INF/src/struts/FSM/struts-config-FSM.xml</param-value>
+    </init-param>
+    <init-param>
+      <param-name>debug</param-name>
+      <param-value>3</param-value>
+    </init-param>
+    <init-param>
+      <param-name>detail</param-name>
+      <param-value>3</param-value>
+    </init-param>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>action</servlet-name>
+    <url-pattern>*.do</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LayerRequestAjax</servlet-name>
+    <servlet-class>ajaxServlet.FSM.LayerRequestAjax</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>EndMeasureAjax</servlet-name>
+    <servlet-class>ajaxServlet.FSM.EndMeasureAjax</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PeerCompRequestAjax</servlet-name>
+    <servlet-class>ajaxServlet.FSM.PeerCompRequestAjax</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SetFuncProsId</servlet-name>
+    <servlet-class>servlets.fsm.SetFuncProsId</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LayerRequestAjax</servlet-name>
+    <url-pattern>/servlet/LayerRequestAjax</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PeerCompRequestAjax</servlet-name>
+    <url-pattern>/servlet/PeerCompRequestAjax</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SetFuncProsId</servlet-name>
+    <url-pattern>/servlet/SetFuncProsId</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>EndMeasureAjax</servlet-name>
+    <url-pattern>/servlet/EndMeasureAjax</url-pattern>
+  </servlet-mapping>
+  <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config>
+  <resource-ref>
+    <description>DB Connection</description>
+    <res-ref-name>jdbc/gcgl</res-ref-name>
+    <res-type>javax.sql.DataSource</res-type>
+    <res-auth>Container</res-auth>
+  </resource-ref>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <context-param>
+    <param-name>javax.servlet.jsp.jstl.fmt.localizationContext</param-name>
+    <param-value>TrackerRes</param-value>
+  </context-param>
+</web-app>
